@@ -100,5 +100,6 @@ Cleveland 80AF Right Angle Dual Output Shaft (Model #44152)
 - **Pushbutton Station:** AC 380 V / 5 A
 
 These devices ensure safe operation, overload protection, and standardized motor-control wiring.
+<img width="1281" height="711" alt="image" src="https://github.com/user-attachments/assets/ab8828b5-29d9-4c2b-9036-190dd7b350be" />
 
 
