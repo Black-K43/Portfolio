@@ -34,39 +34,25 @@ The simulation includes:
 
 ---
 
-## 🧮 Motor Model Equations (Simplified)
+## Motor Model Equations (Simplified)
 
-The analytical foundation is given by the classical induction motor equations:
+The induction motor model is described using the classical dq0 representation.  
+Below are clean, simplified engineering equations suitable for documentation.
 
-### 1. Electromagnetic Torque  
-\[
-T_e = \frac{3}{2} p \, (\psi_d i_q - \psi_q i_d)
-\]
+**1. Electromagnetic Torque**
+Te = (3/2) * p * (psi_d * i_q – psi_q * i_d)
 
-### 2. Stator Voltage Equations  
-\[
-v_d = R_s i_d + \frac{d\psi_d}{dt} - \omega_e \psi_q
-\]  
-\[
-v_q = R_s i_q + \frac{d\psi_q}{dt} + \omega_e \psi_d
-\]
+**2. Stator Voltage Equations**
+v_d = Rs * i_d + d(psi_d)/dt – we * psi_q  
+v_q = Rs * i_q + d(psi_q)/dt + we * psi_d
 
-### 3. Rotor Flux Linkage  
-\[
-\psi_d = L_s i_d + L_m i_{dr}
-\]  
-\[
-\psi_q = L_s i_q + L_m i_{qr}
-\]
+**3. Flux Linkage Relations**
+psi_d = Ls * i_d + Lm * i_dr  
+psi_q = Ls * i_q + Lm * i_qr
 
-### 4. Mechanical Dynamics  
-\[
-J \frac{d\omega_m}{dt} = T_e - T_L - B\omega_m
-\]
+**4. Mechanical Dynamics**
+J * d(wm)/dt = Te – TL – B * wm
 
-These equations describe how torque, electrical currents and rotor speed evolve during the simulation.
-
-A full explanation is available in `/docs/motor_equations.md`.
 
 ---
 
